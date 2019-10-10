@@ -47,3 +47,41 @@
   .Contact .status .status-offline {
     background: #f4511e;
   }
+
+  .Users
+  {
+    padding: 1em;
+    width: 220px;
+    display: flex;
+    background: linear-gradient(45deg, white 50%,
+	rgb(4, 66, 66) 50%, rgb(28, 143, 143) 75%, 
+	white 50%, white 50%, 
+  rgb(7, 196, 196) 50%);
+  
+  }
+
+  .Users li
+  {
+    list-style : none;
+  }
+
+  .Users img
+  {
+    border-radius: 50%;
+  }
+
+  p
+  {
+    color: rgb(32, 31, 31);
+    margin: 0px;
+  }
+  h3
+  {
+    color: rgb(8, 8, 8);
+    margin: 0px;
+  }
+
+
+
+
+ 
