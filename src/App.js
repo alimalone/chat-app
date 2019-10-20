@@ -1,28 +1,28 @@
-import React from 'react';
-import ContactList from './components/ContactList'
-import './App.css';
-/*import Contact from './components/Contact'*/
-
-
+import React from "react";
+import Contact from "./components/Contact.js";
+import ContactList from "./components/ContactList";
 
 function App() {
   return (
     <div className="App">
-    <ContactList/>
+      <Contact
+        image="https://randomuser.me/api/portraits/women/4.jpg"
+        userName="Joa Black"
+        status="online"
+      />
+      <Contact
+        image="https://randomuser.me/api/portraits/men/47.jpg"
+        userName="Leo Mills"
+        status="offline"
+      />
+      <Contact
+        image="https://randomuser.me/api/portraits/women/12.jpg"
+        userName="Edith Kelly"
+        status="online"
+      />
+      <ContactList />
     </div>
   );
 }
 
 export default App;
-
-
-/*Quête précédente
-
-<Contact name="Joa Black" 
-             avatar="https://randomuser.me/api/portraits/women/4.jpg"
-             status/>
-    <Contact name="Leo Mills"
-             avatar="https://randomuser.me/api/portraits/men/47.jpg"/>
-    <Contact name="Edith Kelly"
-             avatar="https://randomuser.me/api/portraits/women/12.jpg"
-             status/>*/

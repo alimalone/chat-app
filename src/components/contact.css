@@ -1,87 +1,58 @@
 /* Component enclosing tag */
 .Contact {
-    padding: 1em;
-    background: #555;
-    width: 220px;
-    display: flex;
-    
-  }
-  
-  /* Contact image */
-  .Contact .avatar {
-    border-radius: 50px;
-    margin-right: 1em;
-    width: 48px;
-    height: 48px;
-    margin-top: 12px;
-  }
-  
-  /* Name */
-  .Contact .name {
-    margin: 0 0 0.25rem;
-    color: #eee;
-    font-size: 10px;
-  }
-  
-  /* Status text */
-  .Contact .status .status-text {
-    color: #999;
-    }
-  
-  /* Status (rounded&colored indicator) */
-  .Contact .status .status-online,
-  .Contact .status .status-offline {
-    display: inline-block;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    margin-right: 100px;
-    
+  padding: 1em;
+  background: linear-gradient(
+    45deg,
+    white 25%,
+    #036868 25%,
+    #047070 50%,
+    #e0ffff 75%
+  );
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
 
-  }
-  
-  .Contact .status .status-online {
-    background: #aed581;
-  }
-  
-  .Contact .status .status-offline {
-    background: #f4511e;
-  }
+/* Contact image */
+.Contact .avatar {
+  border-radius: 100%;
+  margin-right: 1em;
+  width: 50px;
+  height: 50px;
+}
 
-  .Users
-  {
-    padding: 1em;
-    width: 220px;
-    display: flex;
-    background: linear-gradient(45deg, white 50%,
-	rgb(4, 66, 66) 50%, rgb(28, 143, 143) 75%, 
-	white 50%, white 50%, 
-  rgb(7, 196, 196) 50%);
-  
-  }
+/* Name */
+.Contact .name {
+  margin: 0 0 0.25rem;
+  color: rgb(5, 4, 99);
+}
+.status {
+  display: flex;
+  flex-direction: row;
+}
 
-  .Users li
-  {
-    list-style : none;
-  }
+/* Status text */
+.Contact .status .status-text {
+  color: black;
+  margin: 0;
+  text-align: left;
+}
 
-  .Users img
-  {
-    border-radius: 50%;
-  }
+/* Status (rounded&colored indicator) */
+.Contact .status .status-online,
+.Contact .status .status-offline {
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  margin-top: 6px;
+}
 
-  p
-  {
-    color: rgb(32, 31, 31);
-    margin: 0px;
-  }
-  h3
-  {
-    color: rgb(8, 8, 8);
-    margin: 0px;
-  }
+.Contact .status .status-online {
+  background: #aed581;
+}
 
-
-
-
- 
+.Contact .status .status-offline {
+  background: #f4511e;
+}

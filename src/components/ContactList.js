@@ -1,47 +1,45 @@
-import React from 'react';
-import './contact.css';
+import React from "react";
+import Contact from "./Contact";
 
-const ContactList = [
-    {   
-        avatar: "https://randomuser.me/api/portraits/women/50.jpg",
-        firstName: "Tracey",
-        lastName: "Jacobs"
-    },
-    {   avatar: "https://randomuser.me/api/portraits/men/62.jpg",
-        firstName: "Lance",
-        lastName: "Hanson"
-    },
-    {   
-        avatar: "https://randomuser.me/api/portraits/men/9.jpg",
-        firstName: "Austin",
-        lastName: "Barnes"
-    },
-    {
-        avatar: "https://randomuser.me/api/portraits/women/51.jpg",
-        firstName: "Lillian",
-        lastName: "Carpenter"
-    },
-    {   
-        avatar: "https://randomuser.me/api/portraits/women/14.jpg",
-        firstName: "Hannah",
-        lastName: "Gardner"
-    }
-  ];
+const ContactsList = [
+  {
+    name: "Marjorie Holland",
+    image: "https://randomuser.me/api/portraits/women/21.jpg",
+    status: "true"
+  },
+  {
+    name: "Christina Thompson",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    status: "true"
+  },
+  {
+    name: "Devon Lawson",
+    image: "https://randomuser.me/api/portraits/men/74.jpg",
+    status: "true"
+  },
+  {
+    name: "Kent Fernandez",
+    image: "https://randomuser.me/api/portraits/men/58.jpg",
+    status: "false"
+  },
+  {
+    name: "Brandy Neal",
+    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    status: "false"
+  }
+];
 
-const ContactView = ()=>{
-    return ContactList.map((item) =>
-    
-    <figure class="Users">
-        
-        <li key={item.avatar}>
-         <img src={item.avatar} alt="Gens"/>
-           <h3>{item.firstName}</h3>
-             <p>{item.lastName}</p>
-        </li>
-         
-    </figure>
-    )
-}
-    
-    
-export default ContactView;
+const ListContact = () => (
+  <div>
+    {ContactsList.map(contact => (
+      <Contact
+        key={contact.name}
+        userName={contact.name}
+        image={contact.image}
+        status={contact.status}
+      />
+    ))}
+  </div>
+);
+
+export default ListContact;
